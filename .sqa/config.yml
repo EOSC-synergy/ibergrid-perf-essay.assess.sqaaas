@@ -1,0 +1,42 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/ibergrid-perf-essay:
+      branch: main
+      repo: https://github.com/EOSC-synergy/ibergrid-perf-essay
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.0.0
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/EOSC-synergy/ibergrid-perf-essay git:
+        commands:
+        - /usr/bin/env sh .sqa/script.stinky-lavender-owl.sh
+        container: qc.acc_crabby-cardinal-mastiff
+  QC.Doc:
+    repos:
+      github.com/EOSC-synergy/ibergrid-perf-essay find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.tasty-celadon-caterpillar.sh
+        container: qc.doc_squeaky-sapphire-wombat
+      github.com/EOSC-synergy/ibergrid-perf-essay git:
+        commands:
+        - /usr/bin/env sh .sqa/script.droopy-cyan-forest.sh
+        container: qc.doc_bumpy-pink-shrew
+  QC.Lic:
+    repos:
+      github.com/EOSC-synergy/ibergrid-perf-essay licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.stealthy-eggplant-spaniel.sh
+        container: qc.lic_cozy-jade-wolfhound
+  QC.Ver:
+    repos:
+      github.com/EOSC-synergy/ibergrid-perf-essay get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.skinny-lime-chinook.sh
+        container: qc.ver_homey-carmine-bordeaux
+timeout: 5400
