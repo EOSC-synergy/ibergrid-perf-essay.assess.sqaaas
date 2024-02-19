@@ -1,5 +1,5 @@
 services:
-  qc.acc_randy-bistre-avocet:
+  qc.acc_lanky-purple-peccary:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,7 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_shaggy-gold-insect:
+  qc.doc_sunny-pear-dog:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -15,7 +15,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_squeaky-cobalt-fossa:
+  qc.doc_tacky-tomato-ocelot:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
       dockerfile: Dockerfile
@@ -25,7 +25,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_wimpy-turquoise-quokka:
+  qc.lic_seedy-burgundy-terrier:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Lic/licensee
       dockerfile: Dockerfile
@@ -35,7 +35,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.ver_woolly-pear-bear:
+  qc.ver_wimpy-pink-slug:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
       dockerfile: Dockerfile

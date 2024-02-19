@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/ibergrid-perf-essay git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-linen-wolverine.sh
-        container: qc.acc_randy-bistre-avocet
+        - /usr/bin/env sh .sqa/script.sunny-green-moth.sh
+        container: qc.acc_lanky-purple-peccary
   QC.Doc:
     repos:
       github.com/EOSC-synergy/ibergrid-perf-essay find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-thistle-liger.sh
-        container: qc.doc_squeaky-cobalt-fossa
+        - /usr/bin/env sh .sqa/script.ugly-puce-buffalo.sh
+        container: qc.doc_tacky-tomato-ocelot
       github.com/EOSC-synergy/ibergrid-perf-essay git:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-ruby-ostrich.sh
-        container: qc.doc_shaggy-gold-insect
+        - /usr/bin/env sh .sqa/script.sleazy-pumpkin-buzzard.sh
+        container: qc.doc_sunny-pear-dog
   QC.Lic:
     repos:
       github.com/EOSC-synergy/ibergrid-perf-essay licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-dandelion-bloodhound.sh
-        container: qc.lic_wimpy-turquoise-quokka
+        - /usr/bin/env sh .sqa/script.craggy-puce-mau.sh
+        container: qc.lic_seedy-burgundy-terrier
   QC.Ver:
     repos:
       github.com/EOSC-synergy/ibergrid-perf-essay get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-peach-ray.sh
-        container: qc.ver_woolly-pear-bear
+        - /usr/bin/env sh .sqa/script.tasty-aquamarine-kakapo.sh
+        container: qc.ver_wimpy-pink-slug
 timeout: 5400
